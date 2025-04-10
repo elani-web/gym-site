@@ -1,0 +1,147 @@
+body {
+    color: antiquewhite;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+.hero{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(gym-with-indoor-cycling-equipment.jpg);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0,0, 0, 0));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 50;
+}
+header .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+li{
+    padding: 0 30px;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    color: snow;
+    font-size: 18px;
+    transform: .3s;
+}
+#sign-in {
+    background-color: goldenrod;
+    color: black;
+    width: 100px;
+    border-radius: 5px;
+}
+.section h3 {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 200px;
+    gap: 250px;
+}
+.images:hover img:not(:hover) {
+    opacity: .7;
+    transform: scale(.85);
+    filter: drop-shadow(1px 1px 20px goldenrod);
+    transition: all 0.2s ease-in-out;
+}
+.images img {
+    border-radius: 25px;
+    width: 100%;
+    max-width: 300px;
+    filter: drop-shadow(1px 1px 20px blue);
+  }
+.images h3 {
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+#side {
+    display: flex;
+    gap: 100px;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.plan {
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(80, 79, 79);
+    width: 350px;
+    height: 300px;
+    background-color: transparent;
+}
+#btn {
+    background-color: goldenrod;
+    width: 220px;
+    border-radius: 250px;
+}
+#btn:hover {
+    background-color:blue;
+    filter: drop-shadow(1px 1px 20px goldenrod);
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    .hero {
+      padding: 20px;
+    }
+    .images {
+      gap: 10px;
+    }
+    .plan {
+      width: 45%;
+    }
+    li{
+        padding: 0 10px;
+        font-size: medium;
+    }
+  }
+  
+@media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    .hero {
+      padding: 10px;
+    }
+    .images {
+      gap: 5px;
+    }
+    .plan {
+      width: 100%;
+    }
+    li{
+        padding: 0 10px;
+        font-size: medium;
+    }
+  }
